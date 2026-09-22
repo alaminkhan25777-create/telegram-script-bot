@@ -26,7 +26,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ── config ────────────────────────────────────────────────────────────────────
-BOT_TOKEN  = os.environ.get("BOT_TOKEN", "")
+BOT_TOKEN  = os.environ.get("8455313450:AAGEKMwGJAEDhD2rTfAt0S68jqnUcBO1Tok", "")
 ADMIN_ID   = int(os.environ.get("ADMIN_ID", "0"))   # তোমার Telegram user ID
 MAX_TIME   = 15    # seconds
 MAX_OUTPUT = 3500  # chars
@@ -34,7 +34,7 @@ MAX_OUTPUT = 3500  # chars
 # ── helpers ───────────────────────────────────────────────────────────────────
 def is_admin(update: Update) -> bool:
     if ADMIN_ID == 0:
-        return True   # admin set না থাকলে সবাই চালাতে পারবে
+     7525798243 না থাকলে সবাই চালাতে পারবে
     return update.effective_user.id == ADMIN_ID
 
 def run_code(code: str, filename: str = "script.py") -> dict:
